@@ -6,7 +6,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Welcome to KoKoa Talk</title>
+    <title>Settings - KoKoaTlak</title>
   </head>
   <body>
     <div class="status-bar">
@@ -24,24 +24,32 @@
       </div>
     </div>
 
-    <header class="welcome-header">
-      <h1 class="welcome-header__title">Welcome to KoKoaTalk</h1>
-      <p class="welcome-header__text">
-        If you have a KoKoa Account, log in with your email or phone number.
-      </p>
-    </header>
 
-    <form action="friends.html" method="get" id="login-form">
-      <input
-        name="username"
-        required
-        type="text"
-        placeholder="Email or phone number"
-      />
-      <input name="password" required type="password" placeholder="Password" />
-      <input type="submit" value="Log In" />
-      <a href="#">Find KoKoa Account or Password</a>
-    </form>
+
+    <main class="main-screen">
+        
+
+    </main>
+    
+
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__btn"><a class="nav__link" href="friends.html""><i class="far fa-user fa-2x"></i></a></li>
+        <li class="nav__btn">
+            <a class="nav__link" href="chats.html">
+                <span class="nav__notification badge">1</span>
+                <i class="far fa-comment fa-2x"></i>
+            </a>
+        </li>
+        <li class="nav__btn"><a class="nav__link" href="find.html"><i class="fas fa-search fa-2x"></i></a></li>
+        <li class="nav__btn">
+            <a class="nav__link" href="more.html">
+                <i class="fas fa-ellipsis-h fa-2x"></i>
+                <span class="nav__new-link"></span>
+            </a>
+        </li>
+      </ul>
+    </nav>
 
     <script
       src="https://kit.fontawesome.com/38a4f45994.js"
